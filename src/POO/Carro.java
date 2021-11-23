@@ -10,21 +10,33 @@ package POO;
  * @author IFSC
  */
 public class Carro {
+
     String tipo;
     String cor;
     String placa;
     int numPortas;
-
-    void imprimeDadosCarro(){
-        System.out.println("-------CARRO------");
-        System.out.println("Cor do carro: "+ cor);
-        System.out.println("Numero de portas: "+ numPortas);
-        System.out.println("Placa do carro: "+ placa);
-        System.out.println("Modelo do carro: "+ tipo);
+    
+    public Carro(){
+        
     }
     
     
-    
+    public Carro(String tipo, String cor, String placa, int numPortas) {
+        this.tipo = tipo;
+        this.cor = cor;
+        this.placa = placa;
+        this.numPortas = numPortas;
+
+    }
+
+    void imprimeDadosCarro() {
+        System.out.println("-------CARRO------");
+        System.out.println("Cor do carro: " + cor);
+        System.out.println("Numero de portas: " + numPortas);
+        System.out.println("Placa do carro: " + placa);
+        System.out.println("Modelo do carro: " + tipo);
+    }
+
     public String getTipo() {
         return tipo;
     }
@@ -56,6 +68,5 @@ public class Carro {
     public void setNumPortas(int numPortas) {
         this.numPortas = numPortas;
     }
-    
-   
+
 }

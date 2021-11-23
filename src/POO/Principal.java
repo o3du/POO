@@ -12,18 +12,28 @@ package POO;
 public class Principal {
     
     public static void main(String[] args) {
-        Carro carro = new Carro();
+        //Construtor 1 - com assinatura
+        Carro carro = new Carro("Gol", "Vermelho", "BAT-4740", 2);
         
-        carro.setTipo("Gol");
-        carro.setCor("Amarelo");
-        carro.setPlaca("BAT-474");
-        carro.setNumPortas(4);
+        carro.imprimeDadosCarro();
         
-        //carro.imprimeDadosCarro();
+        Carro outroCarro = new Carro();
+        outroCarro.setCor("Preto");
+        outroCarro.setTipo("Fusca");
+        outroCarro.setNumPortas(2);
+        outroCarro.setPlaca("ASP-458");
         
-        double a=3,b=2;
+        System.out.println("-------CARRO------");
+        System.out.println("Cor do carro: " + outroCarro.getCor());
+        System.out.println("Numero de portas: " + outroCarro.getNumPortas());
+        System.out.println("Placa do carro: " + outroCarro.getPlaca());
+        System.out.println("Modelo do carro: " + outroCarro.getTipo());
+        
+        /* double a=3,b=2;
         System.out.println("Quadrado de "+a+" "
-                + "é: "+Calculo.elevar(a));
+                + "é: "+Calculo.elevar(a)); */
+        
+        
                 
         
         Pessoa pessoa = new Pessoa();
