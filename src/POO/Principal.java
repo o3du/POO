@@ -19,8 +19,12 @@ public class Principal {
         carro.setPlaca("BAT-474");
         carro.setNumPortas(4);
         
-        carro.imprimeDadosCarro();
+        //carro.imprimeDadosCarro();
         
+        double a=3,b=2;
+        System.out.println("Quadrado de "+a+" "
+                + "é: "+Calculo.elevar(a));
+                
         
         Pessoa pessoa = new Pessoa();
     
