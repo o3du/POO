@@ -19,13 +19,24 @@ public class Principal {
         carro.setPlaca("BAT-474");
         carro.setNumPortas(4);
         
-        System.out.println("-------CARRO------");
-        System.out.println("Cor do carro: "+carro.getCor());
-        System.out.println("Numero de portas: "+carro.getNumPortas());
-        System.out.println("Placa do carro: "+carro.getPlaca());
-        System.out.println("Modelo do carro: "+carro.getTipo());
+        carro.imprimeDadosCarro();
+        
+        
+        Pessoa pessoa = new Pessoa();
+    
+          pessoa.setNome("Eduardo");
+          pessoa.setGenero("Masculino");
+          pessoa.setBioTipo("Magro");
+          pessoa.setCorCabelo("Preto");
+          pessoa.setCorPele("Pardo");
+          pessoa.setIdade(17);
+          
+          pessoa.imprimeDadosPessoa();
         
         
     }
-    
+        
+        
+        
 }
+

@@ -18,6 +18,17 @@ public class Pessoa {
     String corPele;
     int idade;
 
+    void imprimeDadosPessoa(){
+          System.out.println("-------PESSOA------");
+          System.out.println("Nome: "+ nome);
+          System.out.println("Gênero Sexual: "+ genero);
+          System.out.println("BioTipo: "+ bioTipo);
+          System.out.println("Cor do cabelo: "+ corCabelo);
+          System.out.println("Cor da Pele: "+ corPele);
+          System.out.println("Idade: "+ idade);
+    }
+    
+    
     //Nome da pessoa
     public String getNome() {
         return nome;
